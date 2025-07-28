@@ -7,7 +7,7 @@ with open('brain_tumor.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Streamlit UI
-st.title("Cancer Prediction Web App by Pratik the Great 😎😎🍅 ")
+st.title("Cancer Prediction Web App by Prashant the Great 😎😎🍅 ")
 st.write("🔍 This app uses a Random Forest Classifier to predict type of cancer.")
 
 # Collect user input
@@ -33,7 +33,7 @@ mri_result = st.selectbox("MRI Result Abnormality", options=[0, 1])
 follow_up = st.selectbox("Follow-Up Required?", options=[0, 1])
 
 # Button to predict
-if st.button("Predict Follow-up Requirement"):
+if st.button("Predict Cancer type"):
     input_data = np.array([[
         age,
         0 if gender == "Female" else 1,
