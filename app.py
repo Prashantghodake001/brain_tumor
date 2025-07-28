@@ -8,7 +8,7 @@ with open('brain_tumor.pkl', 'rb') as f:
 
 # Streamlit UI
 st.title("Cancer Prediction Web App by Prashant the Great 😎😎🍅 ")
-st.write("🔍 This app uses a Random Forest Classifier to predict type of cancer.")
+st.write("🔍 This app uses a Adaboost Classifier to predict type of cancer.")
 
 # Collect user input
 age = st.number_input("Age", min_value=0, max_value=120, value=30)
